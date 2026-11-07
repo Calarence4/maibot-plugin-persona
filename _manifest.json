@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "id": "com.calarence.persona",
+  "version": "0.1.0",
+  "name": "人格运行时",
+  "description": "叙事型记忆卡 + 全量存档卡 + 渐进披露风格；零向量、零 Embedding、零记忆 LLM。",
+  "author": {
+    "name": "Calarence",
+    "url": "https://github.com/Calarence"
+  },
+  "license": "MIT",
+  "urls": {
+    "repository": "https://github.com/Calarence/maibot-plugin-persona",
+    "documentation": "https://github.com/Calarence/maibot-plugin-persona#readme"
+  },
+  "host_application": {
+    "min_version": "1.3.19",
+    "max_version": "1.3.99"
+  },
+  "sdk": {
+    "min_version": "2.21.0",
+    "max_version": "2.99.99"
+  },
+  "capabilities": [
+    "llm.generate"
+  ],
+  "i18n": {
+    "default_locale": "zh-CN"
+  }
+}

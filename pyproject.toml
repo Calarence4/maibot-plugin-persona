@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maibot-plugin-persona"
+version = "0.1.0"
+description = "MaiBot 人格运行时：叙事型记忆卡 + 全量存档卡 + 渐进披露风格"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Calarence" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pydantic>=2",
+    "pytest>=8",
+    "maibot-plugin-sdk>=2.21,<3",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/*" = ["E402"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
